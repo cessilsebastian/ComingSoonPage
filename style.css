@@ -1,0 +1,100 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial, sans-serif';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Container Styling */
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    background: linear-gradient(to right, #ff9f43, #f368e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Subtitle Styling */
+p {
+    font-size: 1.2rem;
+    margin: 10px 0 30px;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+/* Countdown Styling */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.time-box {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.time-box h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ff9f43;
+}
+
+.time-box span {
+    font-size: 1rem;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Footer Styling */
+.footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Floating Particles */
+.particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: floatParticles 10s infinite linear;
+}
+
+/* Particle Animation */
+@keyframes floatParticles {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-50vh) scale(0.5);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
